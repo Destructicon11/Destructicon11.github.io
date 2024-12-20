@@ -50,42 +50,13 @@
             text-align: center;
         }
 
-        /* Video wrapper for responsive sizing */
-        .video-wrapper {
-            position: relative;
-            padding-bottom: 56.25%; /* 16:9 aspect ratio */
-            height: 0;
-            margin: 20px 0;
-            background: #111; /* Dark background for video container */
-        }
-
-        .video-wrapper iframe {
-            position: absolute;
-            top: 0;
-            left: 0;
+        /* Remove video-wrapper class and replace with direct video styling */
+        video {
             width: 100%;
-            height: 100%;
-            border-radius: 8px;
-            border: 1px solid #333; /* Subtle border */
-        }
-
-        /* Dark themed video section */
-        .video-section {
-            margin: 20px 0;
-            width: 95%;
-            padding: 10px;
-        }
-
-        .video-title {
-            color: yellow;
-            margin-bottom: 10px;
-            text-align: center;
-        }
-
-        .video-description {
-            color: #ccc;
-            margin-bottom: 20px;
-            text-align: center;
+            max-width: 800px;  /* Or any max size you prefer */
+            height: auto;      /* Maintains aspect ratio */
+            margin: 20px auto; /* Centers the video */
+            display: block;    /* Helps with centering */
         }
 
         .game-section {
@@ -117,23 +88,15 @@
                 - UI is mostly self-explanatory, also there's a video so...<br>
                 - Works with <a href="windows.html" style="color: yellow">Windows</a>
             </p>
-            <!-- YouTube Video Section -->
-            <section class="video-section">
-                <h2 class="video-title">Game Demonstration</h2>
-                <p class="video-description">Black Blast 2 Player Gameplay</p>
-                <div class="video-wrapper">
-                    <!-- Converted to proper embed URL format -->
-                    <iframe 
-                        src="https://www.youtube.com/embed/fayDims2DnU" 
-                        frameborder="0" 
-                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
-                        allowfullscreen>
-                    </iframe>
-                </div>
-                <nav><a href="android-builds/Block Blast Battle Royale Chapter 3 Season 1.apk" download class="download-button">
-                    Download Block Blast Versus
-                </a></nav>
-            </section>  
+            <video 
+                src="https://www.youtube.com/embed/fayDims2DnU" 
+                frameborder="0" 
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                allowfullscreen>
+            </video>
+            <nav><a href="android-builds/Block Blast Battle Royale Chapter 3 Season 1.apk" download class="download-button">
+                Download Block Blast Versus
+            </a></nav>
         </section>
     </main>
     <footer>
