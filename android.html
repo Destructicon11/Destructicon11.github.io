@@ -26,17 +26,13 @@
         nav {
             color: yellow;
             text-decoration: underline;
-            display: inline-block;  /* Better than just inline */
-            text-indent: 0;
-            margin: 0;             /* Reset margins */
-            padding: 0;            /* Reset padding */
-            vertical-align: middle; /* Align vertically with surrounding text */
+            display: inline; /* Makes nav flow with text */
         }
 
-        nav a {
+        a {
             color: yellow;
             text-decoration: underline;
-            display: inline-block;  /* Better than just inline */
+            display: inline; /* Makes nav flow with text */
         }
         
         main {
@@ -97,10 +93,6 @@
             border: grey;
             border-radius: 5px;
         }
-
-        .yellow-link {
-            color: yellow;
-        }       
         
         footer {
             text-align: center;
@@ -123,7 +115,7 @@
                 - Currently just a co-op Block Blast Clone, but still fun<br>
                 - Very fun, barely functional, 10/10 UI design<br>
                 - UI is mostly self-explanatory, also there's a video so...<br>
-                - Works with <nav><a href="windows.html" class="yellow-link">Windows</a></nav> Build
+                - Works with <a href="windows.html">Windows</a>
             </p>
             <!-- YouTube Video Section -->
             <section class="video-section">
@@ -138,11 +130,9 @@
                         allowfullscreen>
                     </iframe>
                 </div>
-                <nav>
-                    <a href="android-builds/Block Blast Battle Royale Chapter 3 Season 1.apk" class="yellow-link" download class="download-button">
-                        Download Block Blast Versus
-                    </a>
-                </nav>
+                <nav><a href="android-builds/Block Blast Battle Royale Chapter 3 Season 1.apk" download class="download-button">
+                    Download Block Blast Versus
+                </a></nav>
             </section>  
         </section>
     </main>
