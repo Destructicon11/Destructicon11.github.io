@@ -26,7 +26,11 @@
         nav {
             color: yellow;
             text-decoration: underline;
-            display: inline; /* Makes nav flow with text */
+            display: inline-block;  /* Better than just inline */
+            text-indent: 0;
+            margin: 0;             /* Reset margins */
+            padding: 0;            /* Reset padding */
+            vertical-align: middle; /* Align vertically with surrounding text */
         }
         
         main {
