@@ -69,8 +69,24 @@
             border: 3px solid #333;
             width: 100%;
             padding: 0px;
+            margin: 40px 0;
             height: fit-content;
             align-self: center;
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            gap: 20px;
+        }
+
+        .game-section .text-content {
+            flex: 1;
+            min-width: 300px;
+        }
+
+        .game-section video {
+            flex: 1;
+            max-width: 50%;
+            height: auto;
         }
 
         .dotted-section-line {
@@ -111,18 +127,22 @@
     <main>
         <!-- Block Blast Versus -->
         <section class="game-section", id="block-blast-versus">
-            <h2>Block Blast Versus</h2>
-            <p>
-                - Works (for now lol)<br>
-                - Currently just a co-op Block Blast Clone, but still fun<br>
-                - Very fun, barely functional, 10/10 UI design<br>
-                - UI is mostly self-explanatory, also there's a video so...<br>
-                - Works with <a href="windows.html", style="color: yellow">Windows</a><br>
-                - Click to <a href="android-builds/Block Blast Battle Royale Chapter 3 Season 1.apk", style="color: yellow; margin-bottom: 10px;">Download</a>
-            </p>
-            <video controls
-                <source src="Videos/Block Blast Versus.mp4", type="video/mp4">
-            </video>
+            <div class="text-content">
+                <h2>Block Blast Versus</h2>
+                <p>
+                    - Works (for now lol)<br>
+                    - Currently just a co-op Block Blast Clone, but still fun<br>
+                    - Very fun, barely functional, 10/10 UI design<br>
+                    - UI is mostly self-explanatory, also there's a video so...<br>
+                    - Works with <a href="windows.html", style="color: yellow">Windows</a><br>
+                    - Click to <a href="android-builds/Block Blast Battle Royale Chapter 3 Season 1.apk", style="color: yellow; margin-bottom: 10px;">Download</a>
+                </p>
+            </div>
+            <div class="video">
+                <video controls
+                    <source src="Videos/Block Blast Versus.mp4", type="video/mp4">
+                </video>
+            </div>
         </section>
 
         <!-- [Un]-Rigged Slots -->
