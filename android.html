@@ -66,36 +66,11 @@
         }
 
         .game-section {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            gap: 40px;
-            margin: 40px auto;
-            max-width: 1200px;
-            padding: 0 20px;
-        }
-
-        .game-section .text-content {
-            flex: 1;
-            text-align: center;
-            max-width: 50%;
-        }
-
-        .game-section video {
-            flex: 1;
-            max-width: 50%;
-            height: auto;
-            display: block;
-        }
-
-        @media (max-width: 768px) {
-            .game-section {
-                flex-direction: column;
-            }
-            .game-section .text-content,
-            .game-section video {
-                max-width: 100%;
-            }
+            border: 3px solid #333;
+            width: 100%;
+            padding: 0px;
+            height: fit-content;
+            align-self: center;
         }
 
         .dotted-section-line {
@@ -123,7 +98,7 @@
             .apk Files
         </p>
         <section class="dotted-section-box">    
-            <h2 style="color: white; padding: 0px 25px;">
+            <h2 style="color: white; padding: 0px 25px">
                 Table of Contents
             </h2>
             <p>
@@ -136,22 +111,18 @@
     <main>
         <!-- Block Blast Versus -->
         <section class="game-section", id="block-blast-versus">
-            <div class="text-content">
-                <h2>Block Blast Versus</h2>
-                <p>
-                    - Works (for now lol)<br>
-                    - Currently just a co-op Block Blast Clone, but still fun<br>
-                    - Very fun, barely functional, 10/10 UI design<br>
-                    - UI is mostly self-explanatory, also there's a video so...<br>
-                    - Works with <a href="windows.html", style="color: yellow">Windows</a><br>
-                    - Click to <a href="android-builds/Block Blast Battle Royale Chapter 3 Season 1.apk", style="color: yellow; margin-bottom: 10px;">Download</a>
-                </p>
-            </div>
-            <div class="video">
-                <video controls
-                    <source src="Videos/Block Blast Versus.mp4", type="video/mp4">
-                </video>
-            </div>
+            <h2>Block Blast Versus</h2>
+            <p>
+                - Works (for now lol)<br>
+                - Currently just a co-op Block Blast Clone, but still fun<br>
+                - Very fun, barely functional, 10/10 UI design<br>
+                - UI is mostly self-explanatory, also there's a video so...<br>
+                - Works with <a href="windows.html", style="color: yellow">Windows</a><br>
+                - Click to <a href="android-builds/Block Blast Battle Royale Chapter 3 Season 1.apk", style="color: yellow; margin-bottom: 10px;">Download</a>
+            </p>
+            <video controls
+                <source src="Videos/Block Blast Versus.mp4", type="video/mp4">
+            </video>
         </section>
 
         <!-- [Un]-Rigged Slots -->
