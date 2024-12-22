@@ -8,28 +8,33 @@
         body {
             font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
             line-height: 1.6;
-            max-width: 800px;
-            margin: 0 auto;
-            padding: 20px;
+            max-width: 1200px;
+            margin: 0px auto;
+            padding: 20px, 0px, 0px, 0px;
             background-color: black;
             color: white;
         }
         
         header {
             text-align: center;
+            width: 100%;
+            height: fit-content;
             vertical-align: top;
-            padding: 40px 0;
+            border: gray;
+            padding: 5px 0;
             color: white;
         }
         
         nav {
-            margin: 20px 0;
-        }
-        
-        nav a {
-            margin: 0 15px;
             color: yellow;
             text-decoration: underline;
+            display: inline; /* Makes nav flow with text */
+        }
+
+        a {
+            color: yellow;
+            text-decoration: underline;
+            display: inline; /* Makes nav flow with text */
         }
         
         main {
@@ -37,21 +42,65 @@
             color: white;
         }
 
+        h1 {
+            font-size: 60px;
+        }
+
         h2 {
             color: yellow;
+            font-size: 40px;
+            text-align: center;
         }
 
         p {
-            text-indent: 10px;
+            text-align: center;
         }
 
-        /*.bg-image {
-            background-image: url("Images/Fractle1.png");
-            background-size: cover;
-            background-position: center;
-            height: auto;
-            width: max-content;
-        }*/
+        /* Remove video-wrapper class and replace with direct video styling */
+        video {
+            width: 100%;
+            max-width: 800px;  /* Or any max size you prefer */
+            height: auto;      /* Maintains aspect ratio */
+            margin: 20px auto; /* Centers the video */
+            display: block;    /* Helps with centering */
+        }
+
+        .game-section {
+            border: 3px solid #333;
+            margin-bottom: 25px;
+            width: 100%;
+            padding: 0px;
+            height: fit-content;
+            display: flex;
+            justify-content: space-around;
+            align-items: flex-start;
+            gap: 50px;
+        }
+
+        .game-section .text-section {
+            align-self: stretch;
+            width: 500px;
+            padding-left: 50px;
+        }
+
+        .game-section .video-section {
+            align-self: stretch;
+        }
+
+        .game-section .video-section:hover {
+            border: 2px dotted yellow;
+        }
+
+        .dotted-section-line {
+            border-bottom: 3px dotted #666;
+            margin: 30px 0;
+        }
+
+        .dotted-section-box {
+            border: 3px dotted #666;
+            display: inline-block;
+            max-width: fit-content;
+        }
         
         footer {
             text-align: center;
@@ -60,44 +109,46 @@
         }
     </style>
 </head>
-    <body>
-        <header>
-            <h1>A Fun Site Full of Broken Games :)</h1>
-            <!--<nav>
-                <a href="#home">Home</a>
-                <a href="#about">About</a>
-                <a href="#projects">Projects</a>
-                <a href="#contact">Contact</a>
-            </nav>-->
-        </header>
-        <main>
-            <h2><nav><a href="#android">Android</a></nav></h2>
+<body>
+    <header>
+        <h1 style="margin-bottom: 0px;">Android</h1>
+        <p style="color: yellow" vertical-align: top;>
+            .apk Files
+        </p>
+        <section class="dotted-section-box">    
+            <h2 style="color: white; padding: 0px 25px">
+                Table of Contents
+            </h2>
             <p>
-                Most builds live here, as I didn't have Android builds in OneDrive (Unlike my windows projects).
-                Usually quick singleplauer games I made in a week or so
+                <a href="#block-blast-versus", style="color: yellow">Block Blast Versus</a><br>
+                <a href="#un-rigged-slots", style="color: yellow">[Un]-Rigged Slots</a><br>
+                <a href="og-gambling", style="color: yellow">OG Gambling</a>
             </p>
-
-            <h2><nav><a href="#windows">Windows</a></nav></h2>
-            <p>
-                Not many projects here, lost most of them to OneDrive corrupting. Most games here were procrastinated on, 
-                complete opposite of my Android games.
-            </p>
-
-            <h2><nav><a href="#ios">iOS</a></nav></h2>
-            <p>Non here buddy, I ain't got a mac >:)</p>
-
-            <h2>[Don't] Get in Touch</h2>
-            <p>Nu uh lol</p>
-        </main>
-
-        <section id="android">
-            <header>
-                <h1>Android</h1>
-            </header>
-            <h2>.apk Files</h2>
         </section>
+    </header>
+    <main>
+        <!-- Block Blast Versus -->
+        <section class="game-section", id="block-blast-versus">
+            <div class="text-section">
+                <h2>Block Blast Versus</h2>
+                <p>
+                    - Works (for now lol)<br>
+                    - Currently just a co-op Block Blast Clone, but still fun<br>
+                    - Very fun, barely functional, 10/10 UI design<br>
+                    - UI is mostly self-explanatory, also there's a video so...<br>
+                    - Works with <a href="android.html#block-blast-versus", style="color: yellow">Android Build</a> too<br>
+                    - Click to <a href="android-builds/Block Blast Battle Royale Chapter 3 Season 1.apk", style="color: yellow; margin-bottom: 10px;">Download</a>
+                </p>
+            </div>
+            <div class="video-section">
+                <video controls
+                    <source src="Videos/Block Blast Versus.mp4", type="video/mp4">
+                </video>
+            </div>
+        </section>
+    </main>
     <footer>
         <p>© 2024 Human Person - Powered by GitHub Pages</p>
     </footer>
-    </body>
+</body>
 </html>
