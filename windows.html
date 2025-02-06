@@ -119,9 +119,15 @@
             max-width: fit-content;
         }
 
-        .emoji {
-            display: flex;
-        }
+        
+.emoji {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    background-image: url('smile.png');
+    background-size: contain;
+    vertical-align: middle;
+}
         
         footer {
             text-align: center;
@@ -211,11 +217,11 @@
             <div class="text-section", id="wtitg-controls">
                 <h2>Whatever This It: The Game</h2>
                 <p>
-                    - <img class="emoji" src="Images/Input Images/Controller/XboxSeriesX_Left_Stick.png"> | Move [Controller]<br>
-                    - <img class="emoji" src="Images/Input Images/Keyboard Mouse/W_Key_Dark.png">
-                    <img class="emoji" src="Images/Input Images/Keyboard Mouse/A_Key_Dark.png">
-                    <img class="emoji" src="Images/Input Images/Keyboard Mouse/S_Key_Dark.png">
-                    <img class="emoji" src="Images/Input Images/Keyboard Mouse/D_Key_Dark.png"> | Move [Keyboard]<br>
+                    - <img class="emoji" src="Images/Input Images/Controller/XboxSeriesX_Left_Stick.png" style="width: 20px; height: 20px; vertical-align: middle;"> | Move [Controller]<br>
+                    - <img class="emoji" src="Images/Input Images/Keyboard Mouse/W_Key_Dark.png" style="width: 20px; height: 20px; vertical-align: middle;">
+                    <img class="emoji" src="Images/Input Images/Keyboard Mouse/A_Key_Dark.png" style="width: 20px; height: 20px; vertical-align: middle;">
+                    <img class="emoji" src="Images/Input Images/Keyboard Mouse/S_Key_Dark.png" style="width: 20px; height: 20px; vertical-align: middle;">
+                    <img class="emoji" src="Images/Input Images/Keyboard Mouse/D_Key_Dark.png" style="width: 20px; height: 20px; vertical-align: middle;"> | Move [Keyboard]<br>
                 </p>
             </div>
         </section>
